@@ -3,9 +3,9 @@ import agents
 
 def helper(response, username):
     response = response.strip('\n')
-    with open(f"{username}_persona.txt", "a", encoding="utf-8") as f:
+    with open(f"persona/{username}_persona.txt", "a", encoding="utf-8") as f:
         f.write(response.split("Citations:")[0])
-    with open(f"{username}_persona_with_citations.txt", "a", encoding="utf-8") as f:
+    with open(f"persona/{username}_persona_with_citations.txt", "a", encoding="utf-8") as f:
         f.write(response + '\n\n')
 
 
@@ -34,9 +34,9 @@ def intro(post_and_comments_prompt, username):
         messages = [{'role' : 'user', 'content' : prompt}]
     )
     response = response.strip('\n')
-    with open(f"{username}_persona.txt", "w", encoding="utf-8") as f:
+    with open(f"persona/{username}_persona.txt", "w", encoding="utf-8") as f:
         f.write(response.split("Citations:")[0])
-    with open(f"{username}_persona_with_citations.txt", "w", encoding="utf-8") as f:
+    with open(f"persona/{username}_persona_with_citations.txt", "w", encoding="utf-8") as f:
         f.write(response + '\n\n')
 
 def motivations(post_and_comments_prompt, username):
