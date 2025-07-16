@@ -12,6 +12,6 @@ To change the LLM, navigate to `agents.py` file and change the LLM in `llm_confi
 
 For a given user, two txt files will be create in the persona folder. One will be `<username>_persona.txt` and other `<username>_persona_with_citations.txt` which also contains the citations for each charactersitics of the persona.
 
-PS: The profile links should follow the format: **https://www.reddit.com/user/<username>/**
+PS: The profile links should follow the format: **https://www.reddit.com/user/<username>**
 
 You can find sample persona for the user https://www.reddit.com/user/kojied/ and https://www.reddit.com/user/Hungry-Move-6603/comments/ in the persona folder.
